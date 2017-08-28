@@ -1,0 +1,11 @@
+{
+  "name": "Brainfriend",
+  "version": "0.0.1",
+  "scripts": {
+    "node": "node --harmony abf.js >abf.bf",
+    "python": "python compiler.py abf.bf abf.c",
+    "c": "gcc abf.c -o abf -m64",
+    "start": "./abf",
+    "build": "npm run node && npm run python && npm run c && npm start"
+  }
+}
